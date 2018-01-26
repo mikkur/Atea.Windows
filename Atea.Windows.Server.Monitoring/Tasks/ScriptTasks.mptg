@@ -1,0 +1,20 @@
+<TemplateGroup>
+  <Instances>
+    <Instance ID="Instance4016b2f9d1b54ef6b8bd73b7ead68a93" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.ScriptTask" Version="1.0.0.0">
+      <ScriptTaskConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <Script>Scripts\WMIDiag.vbs</Script>
+        <ScriptSecureInputProperty>Password</ScriptSecureInputProperty>
+        <ScriptTimeout>600</ScriptTimeout>
+        <Accessibility>Public</Accessibility>
+        <Id>WMIDiag</Id>
+        <DisplayName>WMI: wmidiag</DisplayName>
+        <Description>Executes a copy of Microsofts WMIDiag on the targeted computer.</Description>
+        <Comment>This script takes tiiiiime!</Comment>
+        <Target>Windows!Microsoft.Windows.Computer</Target>
+        <Enabled>true</Enabled>
+        <Category>Maintenance</Category>
+        <Remotable>false</Remotable>
+      </ScriptTaskConfig>
+    </Instance>
+  </Instances>
+</TemplateGroup>

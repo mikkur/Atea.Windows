@@ -68,6 +68,10 @@
       <SubType>Content</SubType>
       <Generator>FragmentGenerator</Generator>
     </Content>
+    <Content Include="Tasks\ScriptTasks.mptg">
+      <SubType>Content</SubType>
+      <Generator>FragmentGenerator</Generator>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="HealthModel\Rules\PerformanceCollection.mptg.mpx">
@@ -76,6 +80,10 @@
     </Compile>
     <Compile Include="ManagementPack.mpx">
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tasks\ScriptTasks.mptg.mpx">
+      <SubType>Code</SubType>
+      <DependentUpon>Tasks\ScriptTasks.mptg</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -89,10 +97,12 @@
   <ItemGroup>
     <Folder Include="HealthModel" />
     <Folder Include="HealthModel\Rules" />
+    <Folder Include="Tasks" />
     <Folder Include="Scripts" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Scripts\DiskUsageProbe.vbs" />
+    <EmbeddedResource Include="Scripts\WMIDiag.vbs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\VSAC\Microsoft.SystemCenter.OperationsManager.targets" />
 </Project>
